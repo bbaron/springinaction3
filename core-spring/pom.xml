@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>springinaction3</artifactId>
-    <groupId>com.github</groupId>
+    <groupId>com.github.springinaction3</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.github</groupId>
   <artifactId>core-spring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>core-spring</name>
+  <name>Part1: core-spring</name>
   <description>Part 1: Core Spring</description>
 </project>
