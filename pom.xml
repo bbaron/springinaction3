@@ -7,6 +7,14 @@
   <packaging>pom</packaging>
   <name>springinaction3</name>
   <description>Spring in Action 3 Source Code</description>
+  <url>https://github.com/bbaron/springinaction3</url>
+  <developers>
+    <developer>
+      <id>bbaron</id>
+      <email>baron.br@gmail.com</email>
+      <timezone>5</timezone>      
+    </developer>
+  </developers>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,6 +22,6 @@
     <maven.compiler.target>1.6</maven.compiler.target>
   </properties>
   <modules>
-  	<module>core-spring</module>
+    <module>core-spring</module>
   </modules>
 </project>

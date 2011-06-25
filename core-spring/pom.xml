@@ -5,10 +5,11 @@
     <groupId>com.github.springinaction3</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.github</groupId>
   <artifactId>core-spring</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Part1: core-spring</name>
   <description>Part 1: Core Spring</description>
+  <modules>
+    <module>springing-into-action</module>
+  </modules>
 </project>
