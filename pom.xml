@@ -12,7 +12,7 @@
     <developer>
       <id>bbaron</id>
       <email>baron.br@gmail.com</email>
-      <timezone>5</timezone>      
+      <timezone>5</timezone>
     </developer>
   </developers>
 
@@ -24,4 +24,22 @@
   <modules>
     <module>core-spring</module>
   </modules>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit-dep</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-ejb_2.1_spec</artifactId>
+        <version>1.1</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>
