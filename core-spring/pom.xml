@@ -11,5 +11,6 @@
   <description>Part 1: Core Spring</description>
   <modules>
     <module>springing-into-action</module>
+    <module>wiring-beans</module>
   </modules>
 </project>
