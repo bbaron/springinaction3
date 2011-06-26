@@ -92,10 +92,20 @@
       <artifactId>slf4j-api</artifactId>
       <version>${slf4j.version}</version>
     </dependency>
+    <!-- <dependency> -->
+    <!-- <groupId>org.slf4j</groupId> -->
+    <!-- <artifactId>slf4j-simple</artifactId> -->
+    <!-- <version>${slf4j.version}</version> -->
+    <!-- </dependency> -->
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>${slf4j.version}</version>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>0.9.29</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-examples</artifactId>
+      <version>0.9.29</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
