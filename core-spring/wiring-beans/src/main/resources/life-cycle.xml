@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+  default-init-method="turnOnLights" default-destroy-method="turnOffLights">
+
+
+  <bean id="aud1" class="com.github.springinaction3.ch02.springidol.Auditorium" />
+  <bean id="aud2" class="com.github.springinaction3.ch02.springidol.Auditorium" />
+  <bean id="aud3" class="com.github.springinaction3.ch02.springidol.Auditorium" />
+  
+</beans>
