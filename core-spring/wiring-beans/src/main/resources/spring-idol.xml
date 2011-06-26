@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
   <bean id="duke" class="com.github.springinaction3.ch02.springidol.Juggler">
@@ -16,4 +17,22 @@
   <bean id="theStage" class="com.github.springinaction3.ch02.springidol.Stage" factory-method="getInstance" />
 
   <bean id="ticket" class="com.github.springinaction3.ch02.springidol.Ticket" scope="prototype" />
+
+  <bean id="saxophone" class="com.github.springinaction3.ch02.springidol.Saxophone" />
+
+  <bean id="kenny" class="com.github.springinaction3.ch02.springidol.Instrumentalist">
+    <property name="song" value="Jingle Bells" />
+    <property name="instrument" ref="saxophone" />
+  </bean>
+  <bean id="innerKenny" class="com.github.springinaction3.ch02.springidol.Instrumentalist">
+    <property name="song" value="Jingle Bells" />
+    <property name="instrument">
+      <bean class="com.github.springinaction3.ch02.springidol.Saxophone" />
+    </property>
+  </bean>
+  
+  <bean id="pKenny" class="com.github.springinaction3.ch02.springidol.Instrumentalist"
+    p:instrument-ref="saxophone" p:song="Silent Night" 
+  />
+  
 </beans>
